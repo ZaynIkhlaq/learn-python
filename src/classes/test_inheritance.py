@@ -79,3 +79,5 @@ def test_inheritance():
 
     assert issubclass(Employee, Person)
     assert not issubclass(Person, Employee)
+
+test_inheritance()
