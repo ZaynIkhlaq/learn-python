@@ -42,5 +42,16 @@ def test_class_definition():
     # code will creates a new instance of the class and assigns this object to the local variable.
     greeter = GreetingClass()
 
-    assert greeter.say_hello() == 'Hello user'
-    assert greeter.say_goodbye() == 'Goodbye user'
+    result1 = greeter.say_hello()
+    print(f"say_hello() returned: {result1}")
+    assert result1 == 'Hello user'
+    print("✓ First assertion passed")
+
+    print("Hello user")
+
+    result2 = greeter.say_goodbye() 
+    print(f"say_goodbye() returned: {result2}")
+    assert result2 == 'Goodbye user'
+    print("✓ Second assertion passed")
+
+test_class_definition()
